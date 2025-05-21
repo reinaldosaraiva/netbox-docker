@@ -1,0 +1,4 @@
+services:
+  netbox:
+    ports:
+      - "8000:8080"
