@@ -56,7 +56,7 @@ services:
     env_file: env/postgres.env
     volumes:
       - netbox-postgres-data:/var/lib/postgresql/data
-      - ${NETBOX_DEMO_DATA:-./netbox-demo-data/sql/netbox-demo-v4.2.sql}:/docker-entrypoint-initdb.d/netbox-demo-data.sql:ro
+      - ${NETBOX_DEMO_DATA:-./data-demo.sql}:/docker-entrypoint-initdb.d/netbox-demo-data.sql:ro
 
   # redis
   redis:
